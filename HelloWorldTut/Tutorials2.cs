@@ -578,7 +578,15 @@ namespace Tutorialling
         {
             Console.WriteLine();
 
-
+            int index = 1;
+            while (index <= 5)
+            {
+                Console.WriteLine(index);
+                index++;
+                index--;
+                index++;
+                index--;
+            }
 
             Console.WriteLine("");
             Console.WriteLine("");
