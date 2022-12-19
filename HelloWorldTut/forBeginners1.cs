@@ -111,5 +111,26 @@ Console.WriteLine(staticIntArray);
 
 */
 /* LESSON 6 BUILD SIMPLE NETWORK TOOL
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+using System;
+namespace Tutorialling
+{
+    internal class Networkenin
+    {
+        private static void Main(string[] args)
+        {
+            Console.WriteLine();
+
+
+
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("Press any key to close.");
+            Console.ReadLine();
+        }
+    }
+}
 
 */

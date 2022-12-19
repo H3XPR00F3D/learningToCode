@@ -564,10 +564,8 @@ namespace Tutorialling
 }
 
 */
-
 /*  TUT 15 WHILE LOOPS
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-*/
 
 using System;
 namespace Tutorialling
@@ -583,8 +581,29 @@ namespace Tutorialling
             {
                 Console.WriteLine(index);
                 index++;
-               
             }
+
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("Press any key to close.");
+            Console.ReadLine();
+        }
+    }
+}
+
+*/
+/* TUT 16 BUILDING A GUESSING GAME
+------------------------------------------------------------------------------------------------------------------------------------------- 
+
+
+using System;
+namespace Tutorialling
+{
+    internal class GuessWhat
+    {
+        private static void Main(string[] args)
+        {
+            Console.WriteLine();
 
 
 
@@ -595,3 +614,5 @@ namespace Tutorialling
         }
     }
 }
+
+*/
