@@ -583,10 +583,10 @@ namespace Tutorialling
             {
                 Console.WriteLine(index);
                 index++;
-                index--;
-                index++;
-                index--;
+               
             }
+
+
 
             Console.WriteLine("");
             Console.WriteLine("");
