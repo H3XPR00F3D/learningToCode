@@ -12,8 +12,6 @@ namespace Tutorialling
             Console.WriteLine();
 
 
-
-            Console.WriteLine("");
             Console.WriteLine("");
             Console.WriteLine("Press any key to close.");
             Console.ReadLine();
