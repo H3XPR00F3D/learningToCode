@@ -3,6 +3,7 @@
 TO BEGIN CODING:
 start here.........------v
 
+using System;
 namespace Tutorialling
 { 
     internal class Program
@@ -13,6 +14,8 @@ namespace Tutorialling
 
 
 
+            Console.WriteLine("");
+            Console.WriteLine("");
             Console.WriteLine("Press any key to close.");
             Console.ReadLine();
         }
@@ -458,17 +461,129 @@ namespace Tutorialling
 */
 /* TUT 13 BUILDING A BETTER CALCULATOR
  -------------------------------------------------------------------------------------------------------------------
-*/
 
 using System;
 namespace Tutorialling{
     public class BetterCalculator{
         public static void Main(string[] args){
 
+            Console.Write("Enter a number: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
 
+            Console.Write("Enter Operator: ");
+            string op = Console.ReadLine();
 
+            Console.Write("Enter a number: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+
+            if(op == "+")
+            {
+                Console.Write(num1 + num2);
+            }
+            else if(op == "-")
+            {
+                Console.Write(num1 - num2);
+            }
+            else if (op == "*")
+            {
+                Console.Write(num1 * num2);
+            }
+            else if (op == "/")
+            {
+                Console.Write(num1 /num2);
+            }
+            else
+            {
+                Console.WriteLine("Invalid Operator");
+            }
+
+            Console.WriteLine("");
+            Console.WriteLine("");
             Console.WriteLine("Press any key to exit.");
             Console.ReadLine() ;
+        }
+    }
+}
+
+*/
+/* TUT 14 SWITCH STATEMENTS
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+using System;
+namespace Tutorialling
+{
+    public class SwitchStatements
+    {
+        public static void Main(string[] args)
+        {
+
+            Console.WriteLine(GetDay(0));
+
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadLine();
+        }
+
+        static string GetDay(int dayNum)
+        {
+            string dayName;
+            
+            switch (dayNum)
+            {
+                case 0:
+                    dayName = "Sunday";
+                    break;
+                case 1:
+                    dayName = "Monday";
+                    break;
+                case 2:
+                    dayName = "Tuesday";
+                    break;
+                case 3:
+                    dayName = "Wednesday";
+                    break;
+                case 4:
+                    dayName = "Thursday";
+                    break;
+                case 5:
+                    dayName = "Friday";
+                    break;
+                case 6:
+                    dayName = "Saturday";
+                    break;
+                default:
+                    dayName = "Invalid Day Number";
+                    break;
+
+            }
+
+            return dayName;
+        }
+    }
+}
+
+*/
+
+/*  TUT 15 WHILE LOOPS
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+using System;
+namespace Tutorialling
+{
+    internal class WhileLoops
+    {
+        private static void Main(string[] args)
+        {
+            Console.WriteLine();
+
+
+
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("Press any key to close.");
+            Console.ReadLine();
         }
     }
 }
