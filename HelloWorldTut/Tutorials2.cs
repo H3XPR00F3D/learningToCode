@@ -5,20 +5,23 @@ start here.........------v
 
 using System;
 namespace Tutorialling
-{ 
-    internal class Program
+{
+    public class Lesson
     {
-        private static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine();
 
 
-
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("Press any key to close.");
+            Console.ResetColor();
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n\nPress any key to exitc.");
+            Console.ResetColor();
             Console.ReadLine();
         }
+
+
+
     }
 }
 
@@ -647,7 +650,6 @@ namespace Tutorialling
 */
 /* TUT 17 FOR LOOPS
 ---------------------------------------------------------------------------------------------------------------------------------------
-*/
 
 using System;
 namespace Tutorialling
@@ -656,14 +658,330 @@ namespace Tutorialling
     {
         private static void Main(string[] args)
         {
+            int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 };
 
+            for (int i = 0; i< luckyNumbers.Length; i++) { Console.WriteLine(luckyNumbers[i]); }
            
 
             Console.ResetColor();
             Console.BackgroundColor = ConsoleColor.DarkBlue;
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n\nPress any key to close.");
+            Console.ResetColor();
             Console.ReadLine();
         }
     }
 }
+*/
+/* TUT 18 BUILDING AN EXPONENT METHOD
+--------------------------------------------------------------------------------------
+
+using System;
+namespace Tutorialling
+{
+    public class BuildingExponentMethod
+    {
+
+        public static void Main(string[] args)
+        {
+
+
+            Console.WriteLine(GetPow(3, 2));
+
+            Console.ResetColor();
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n\nPress any key to exitc.");
+            Console.ResetColor();
+            Console.ReadLine();
+        }
+
+        static int GetPow(int baseNum, int powNum)
+        {
+            int result = 1;
+            
+            for(int i = 0; i < powNum; i++) { result = result * baseNum; }
+
+            return result;
+        }
+
+
+    }
+}
+
+*/
+/* TUT 19 2D ARRAYS
+-----------------------------------------------------------------------------------------------------------------
+
+using System;
+namespace Tutorialling
+{
+    public class Lesson
+    {
+        public static void Main(string[] args)
+        {
+            int[,] numberGrid = {
+                {1,2},
+                {3,4},
+                {5,6}};
+
+            Console.WriteLine(numberGrid[1,2]);
+
+
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n\nPress any key to exitc.");
+            Console.ResetColor();
+            Console.ReadLine();
+        }
+
+
+
+    }
+}
+
+*/
+/* TUT 20 COMMENTS
+ * OK, WE GOT COMMENTS DOWN. LETS MOVE ON.
+ */
+/* TUT 21 EXCEPTION HANDLING
+---------------------------------------------------------------------------------------------------------------------------------
+
+using System;
+namespace Tutorialling
+{
+    public class Lesson21
+    {
+        public static void Main(string[] args)
+        {
+            try
+            {
+                Console.Write("Enter a number: ");
+                double num1 = Convert.ToDouble(Console.ReadLine());
+                Console.Write("Enter another number: ");
+                double num2 = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine(num1 / num2);
+
+
+                Console.Write("Enter a number: ");
+                int num3 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter another number: ");
+                int num4 = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine(num3 / num4);
+            }
+
+            catch (DivideByZeroException e)
+            {
+                Console.WriteLine("Error! " + e.Message + " ");
+            }
+
+            catch (FormatException f)
+            {
+                Console.WriteLine("Error! " + f.Message + " ");
+            }
+
+            finally
+            {
+
+            }
+
+
+
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n\nPress any key to exit.");
+            Console.ResetColor();
+            Console.ReadLine();
+        }
+
+
+
+    }
+}
+
+*/
+/* TUT 22 CLASSES AND OBJECTS
+------------------------------------------------------------------------------------------------------
+using System;
+namespace Tutorialling
+{
+    public class Lesson22
+    {
+        public static void Main(string[] args)
+        {
+
+
+
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n\nPress any key to exit.");
+            Console.ResetColor();
+            Console.ReadLine();
+        }
+
+
+
+    }
+}
+
+*/
+/* TUT 23 CONSTRUCTORS
+------------------------------------------------------------------------------------------------------
+
+using System;
+namespace Tutorialling
+{
+    public class Lesson23
+    {
+        public static void Main(string[] args)
+        {
+
+
+
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n\nPress any key to exitc.");
+            Console.ResetColor();
+            Console.ReadLine();
+        }
+
+
+
+    }
+}
+
+
+ */
+/* TUT 24 OBJECT METHODS
+------------------------------------------------------------------------------------------------------
+
+using System;
+namespace Tutorialling
+{
+    public class Lesson24
+    {
+        public static void Main(string[] args)
+        {
+
+
+
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n\nPress any key to exitc.");
+            Console.ResetColor();
+            Console.ReadLine();
+        }
+
+
+
+    }
+}
+
+
+ */
+/* TUT 25 GETTERS AND SETTERS
+------------------------------------------------------------------------------------------------------
+
+using System;
+namespace Tutorialling
+{
+    public class Lesson25
+    {
+        public static void Main(string[] args)
+        {
+
+
+
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n\nPress any key to exitc.");
+            Console.ResetColor();
+            Console.ReadLine();
+        }
+
+
+
+    }
+}
+
+ */
+/* TUT 26 STATIC CLASS ATTRIBUTES
+------------------------------------------------------------------------------------------------------
+
+using System;
+namespace Tutorialling
+{
+    public class Lesson26
+    {
+        public static void Main(string[] args)
+        {
+
+
+
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n\nPress any key to exitc.");
+            Console.ResetColor();
+            Console.ReadLine();
+        }
+
+
+
+    }
+}
+
+ */
+/* TUT 27 STATIC METHODS AND CLASSES
+------------------------------------------------------------------------------------------------------
+
+using System;
+namespace Tutorialling
+{
+    public class Lesson27
+    {
+        public static void Main(string[] args)
+        {
+
+
+
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n\nPress any key to exitc.");
+            Console.ResetColor();
+            Console.ReadLine();
+        }
+
+
+
+    }
+}
+
+ */
+/* TUT 28 INHERITANCE
+------------------------------------------------------------------------------------------------------
+
+using System;
+namespace Tutorialling
+{
+    public class Lesson28
+    {
+        public static void Main(string[] args)
+        {
+
+
+
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n\nPress any key to exitc.");
+            Console.ResetColor();
+            Console.ReadLine();
+        }
+
+
+
+    }
+}
+
+ */
