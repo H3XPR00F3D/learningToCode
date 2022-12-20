@@ -595,6 +595,59 @@ namespace Tutorialling
 /* TUT 16 BUILDING A GUESSING GAME
 ------------------------------------------------------------------------------------------------------------------------------------------- 
 
+using System;
+namespace Tutorialling
+{
+    internal class GuessWhat
+    {
+        private static void Main(string[] args)
+        {
+            string secretWord = "giraffe";
+            string guess = "";
+            int guessCount = 0;
+            int guessLimit = 3;
+            bool outOfGuesses = false;
+            bool failed = true;
+
+            while (guess != secretWord && !outOfGuesses && failed)
+            {
+                if (guessCount < guessLimit)
+                {
+
+                    Console.Write("Enter guess: ");
+                    guess = Console.ReadLine();
+                    guessCount++;
+                }
+                else
+                {
+                    outOfGuesses = true;
+                }
+            }
+
+            if (outOfGuesses)
+            {
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.Black;
+                Console.WriteLine("You Lose .");
+            }
+            else
+            {
+                Console.BackgroundColor = ConsoleColor.DarkBlue;
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("You Win! ");
+            }
+
+            Console.ResetColor();
+            Console.WriteLine("\n\nPress any key to close.");
+            Console.ReadLine();
+        }
+    }
+}
+
+*/
+/* TUT 17 FOR LOOPS
+---------------------------------------------------------------------------------------------------------------------------------------
+*/
 
 using System;
 namespace Tutorialling
@@ -603,16 +656,14 @@ namespace Tutorialling
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine();
 
+           
 
-
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("Press any key to close.");
+            Console.ResetColor();
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n\nPress any key to close.");
             Console.ReadLine();
         }
     }
 }
-
-*/
