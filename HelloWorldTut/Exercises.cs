@@ -68,8 +68,7 @@ Constraints:
     1000 <= salary[i] <= 106
     All the integers of salary are unique.
 */
-
-
+/*
 
 namespace Exercises
 {
@@ -95,4 +94,4 @@ namespace Exercises
     }
 }
 
-
+*/

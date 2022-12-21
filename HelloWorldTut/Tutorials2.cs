@@ -804,6 +804,8 @@ namespace Tutorialling
 */
 /* TUT 22 CLASSES AND OBJECTS
 ------------------------------------------------------------------------------------------------------
+
+using HelloWorldTut;
 using System;
 namespace Tutorialling
 {
@@ -811,16 +813,35 @@ namespace Tutorialling
     {
         public static void Main(string[] args)
         {
+            Book book1 = new Book();//Object. Instance of Class 'Book'
+            book1.title = "The Gloaming";
+            book1.author = "H3XPR00F3D";
+            book1.pages = 200;
 
+            Book book2 = new Book();//Object. Instance of Class 'Book'
+            book2.title = "Lord of the Rings";
+            book2.author = "J.R.R. Tolkien";
+            book2.pages = 700;
 
+            Console.WriteLine(book1.title);
+            Console.WriteLine(book1.author);
+            Console.WriteLine(book1.pages);
+            Console.WriteLine();
+            Console.WriteLine(book2.title);
+            Console.WriteLine(book2.author);
+            Console.WriteLine(book2.pages);
 
-            Console.BackgroundColor = ConsoleColor.DarkBlue;
-            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n\nPress any key to exit.");
-            Console.ResetColor();
             Console.ReadLine();
         }
 
+        internal class Book
+        {
+            //Class Attributes.
+            public string title;
+            public string author;
+            public int pages;
+        }
 
 
     }
@@ -830,6 +851,7 @@ namespace Tutorialling
 /* TUT 23 CONSTRUCTORS
 ------------------------------------------------------------------------------------------------------
 
+using HelloWorldTut;
 using System;
 namespace Tutorialling
 {
@@ -837,26 +859,31 @@ namespace Tutorialling
     {
         public static void Main(string[] args)
         {
+            Book book1 = new Book("The Gloaming", "H3XPR00F3D", 200);//Object. Instance of Class 'Book'
 
+            Book book2 = new Book("Lord of the Rings", "J.R.R. Tolkien", 700);//Object. Instance of Class 'Book'
 
+            book2.title = "The Hobbit";
 
-            Console.BackgroundColor = ConsoleColor.DarkBlue;
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("\n\nPress any key to exitc.");
-            Console.ResetColor();
+            Console.WriteLine(book1.title);
+            Console.WriteLine(book1.author);
+            Console.WriteLine(book1.pages);
+            Console.WriteLine();
+            Console.WriteLine(book2.title);
+            Console.WriteLine(book2.author);
+            Console.WriteLine(book2.pages);
+
+            Console.WriteLine("\n\nPress any key to exit.");
             Console.ReadLine();
         }
-
-
-
     }
 }
 
-
- */
+*/
 /* TUT 24 OBJECT METHODS
 ------------------------------------------------------------------------------------------------------
 
+using HelloWorldTut;
 using System;
 namespace Tutorialling
 {
@@ -865,25 +892,26 @@ namespace Tutorialling
         public static void Main(string[] args)
         {
 
+            Student student1 = new Student("Jim", "Business", 2.8);
+            Student student2 = new Student("Pam", "Art", 3.6);
+            Console.WriteLine(student1.hasHonors());
+            Console.WriteLine(student2.hasHonors());
 
 
-            Console.BackgroundColor = ConsoleColor.DarkBlue;
-            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n\nPress any key to exitc.");
-            Console.ResetColor();
             Console.ReadLine();
         }
-
 
 
     }
 }
 
-
- */
+*/
 /* TUT 25 GETTERS AND SETTERS
 ------------------------------------------------------------------------------------------------------
+*/
 
+using HelloWorldTut;
 using System;
 namespace Tutorialling
 {
@@ -892,12 +920,18 @@ namespace Tutorialling
         public static void Main(string[] args)
         {
 
+            Movie avengers = new Movie("The Avengers", "Joss Whedon", "PG-13");
+            Movie shrek = new Movie("Shrek", "Adam Adamson", "PG");
+
+            //G, PG, PG-13, R, NR
+            avengers.rating = "Dog";
+            
+            Console.WriteLine(avengers.Rating);
 
 
-            Console.BackgroundColor = ConsoleColor.DarkBlue;
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("\n\nPress any key to exitc.");
-            Console.ResetColor();
+
+
+            Console.WriteLine("\n\nPress any key to exit.");
             Console.ReadLine();
         }
 
@@ -906,7 +940,7 @@ namespace Tutorialling
     }
 }
 
- */
+
 /* TUT 26 STATIC CLASS ATTRIBUTES
 ------------------------------------------------------------------------------------------------------
 
