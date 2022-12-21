@@ -1006,7 +1006,12 @@ namespace Tutorialling
             Chef chef= new Chef();
             chef.MakeChicken();
 
-
+            ItalianChef italianChef = new ItalianChef();
+            chef.MakeChicken();
+            italianChef.MakePasta();
+            Console.WriteLine();
+            chef.MakeSpecialDish();
+            italianChef.MakeSpecialDish();
 
 
             Console.WriteLine("\n\nPress any key to exitc.");
