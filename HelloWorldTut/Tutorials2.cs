@@ -909,7 +909,6 @@ namespace Tutorialling
 */
 /* TUT 25 GETTERS AND SETTERS
 ------------------------------------------------------------------------------------------------------
-*/
 
 using HelloWorldTut;
 using System;
@@ -940,10 +939,12 @@ namespace Tutorialling
     }
 }
 
-
+*/
 /* TUT 26 STATIC CLASS ATTRIBUTES
 ------------------------------------------------------------------------------------------------------
+*/
 
+using HelloWorldTut;
 using System;
 namespace Tutorialling
 {
@@ -951,13 +952,12 @@ namespace Tutorialling
     {
         public static void Main(string[] args)
         {
+            Song holiday = new Song("Holiday", "Green Day", 200);
+            Song kashmir = new Song("Kashmir", "Led Zepplin", 150);
 
 
 
-            Console.BackgroundColor = ConsoleColor.DarkBlue;
-            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n\nPress any key to exitc.");
-            Console.ResetColor();
             Console.ReadLine();
         }
 
@@ -966,7 +966,6 @@ namespace Tutorialling
     }
 }
 
- */
 /* TUT 27 STATIC METHODS AND CLASSES
 ------------------------------------------------------------------------------------------------------
 

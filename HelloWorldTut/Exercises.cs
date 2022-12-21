@@ -95,3 +95,43 @@ namespace Exercises
 }
 
 */
+/* 1 TWO SUM
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+PROMPT:
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+You can return the answer in any order.
+
+
+
+public class Solution
+{
+    public int[] TwoSum(int[] nums, int target)
+    {
+        // Create a dictionary to store the indices of the array elements
+        Dictionary<int, int> indices = new Dictionary<int, int>();
+
+        // Iterate through the array
+        for (int i = 0; i < nums.Length; i++)
+        {
+            // Calculate the difference between the target and the current element
+            int difference = target - nums[i];
+
+            // Check if the difference exists in the dictionary
+            if (indices.ContainsKey(difference))
+            {
+                // Return the indices of the two elements that add up to the target
+                return new int[] { indices[difference], i };
+            }
+
+            // If the difference doesn't exist in the dictionary, add the current element and its index
+            indices[nums[i]] = i;
+        }
+
+        // If no solution is found, return an empty array
+        return new int[0];
+
+    }
+}
+
+*/
