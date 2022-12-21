@@ -942,7 +942,6 @@ namespace Tutorialling
 */
 /* TUT 26 STATIC CLASS ATTRIBUTES
 ------------------------------------------------------------------------------------------------------
-*/
 
 using HelloWorldTut;
 using System;
@@ -965,10 +964,11 @@ namespace Tutorialling
 
     }
 }
-
+*/
 /* TUT 27 STATIC METHODS AND CLASSES
 ------------------------------------------------------------------------------------------------------
 
+using HelloWorldTut;
 using System;
 namespace Tutorialling
 {
@@ -977,12 +977,10 @@ namespace Tutorialling
         public static void Main(string[] args)
         {
 
+            UsefulTools.SayHi("Mike");
 
 
-            Console.BackgroundColor = ConsoleColor.DarkBlue;
-            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n\nPress any key to exitc.");
-            Console.ResetColor();
             Console.ReadLine();
         }
 
@@ -991,10 +989,12 @@ namespace Tutorialling
     }
 }
 
- */
+*/
 /* TUT 28 INHERITANCE
 ------------------------------------------------------------------------------------------------------
+*/
 
+using HelloWorldTut;
 using System;
 namespace Tutorialling
 {
@@ -1003,12 +1003,13 @@ namespace Tutorialling
         public static void Main(string[] args)
         {
 
+            Chef chef= new Chef();
+            chef.MakeChicken();
 
 
-            Console.BackgroundColor = ConsoleColor.DarkBlue;
-            Console.ForegroundColor = ConsoleColor.Green;
+
+
             Console.WriteLine("\n\nPress any key to exitc.");
-            Console.ResetColor();
             Console.ReadLine();
         }
 
@@ -1017,4 +1018,4 @@ namespace Tutorialling
     }
 }
 
- */
+
